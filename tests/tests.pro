@@ -17,11 +17,14 @@ LIBS += -lgcov
 DEFINES += INPUTDIR=\\\"$$PWD/input/\\\"
 
 HEADERS +=     tst_test1.h \
+    ../app/EqSq.h \
     ../app/myfunc.h \
+    EqSqTest.h \
     fibonachi_test.h \
     tst_stdout.h
 
 SOURCES +=     main.cpp \
+    ../app/EqSq.c \
     ../app/myfunc.c
 
 INCLUDEPATH += ../app
